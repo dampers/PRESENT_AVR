@@ -7,7 +7,7 @@
 ##### key         = 00000000 00000000 0000
 ##### ciphertext  = 5579c138 7b228455
 
-#### This code encrypts after pre-calculating the KeySchedule and the P operation performed on some round keys. PRESENT-80 and PRESENT-128 have the same number of rounds (and the same number of round keys), so if you pre-calculate the round keys, you can use the encryption function together.
+#### This code encrypts after pre-calculating the KeySchedule and the P operation performed on some round keys. PRESENT-80 and PRESENT-128 have the same number of rounds (and the same number of round keys), so if you pre-calculate the round keys, you can use this encryption function for each mode.
 
 
 ### reference
