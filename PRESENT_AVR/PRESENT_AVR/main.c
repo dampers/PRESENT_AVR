@@ -15,7 +15,6 @@ typedef unsigned int u32;
 //#define NUM_ROUND 31
 #define TEXT_SIZE 8
 
-//u16 rk[NUM_ROUND]={0,};
 /*
 u16 rk[32*4]={0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF,
 	0x3FFF, 0xFFFF, 0x3FFF, 0x3FFF,
