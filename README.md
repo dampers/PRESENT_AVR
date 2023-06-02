@@ -3,9 +3,11 @@
 ### Optimized Implementation of PRESENT on 8-bit AVR (ATmega128)
 
 ### Test vectors for PRESENT with an 80-bit key
-plaintext   = 00000000 00000000
-key         = 00000000 00000000 0000
-ciphertext  = 5579c138 7b228455
+##### plaintext   = 00000000 00000000
+##### key         = 00000000 00000000 0000
+##### ciphertext  = 5579c138 7b228455
+
+#### This is a code that has been encrypted after pre-calculating the key schedule and the P operation performed on some round keys. PRESENT-80 and PRESENT-128 have the same number of rounds (and the same number of round keys), so if you pre-calculate the round keys, you can use the encryption function together.
 
 
 ### reference
