@@ -181,17 +181,21 @@
 .endm
 
 .macro P_1 X0, X1, X2, X3, X4, X5, X6, X7, T0, T1
-	// 9 X 4 == 36
+	// 6 X 4 == 24
 	MOVW \T0, \X4
 	P1_1 \X7,\X5,\T1
 	P1_1 \X6,\X4,\T0
 	MOVW \T0, \X0
 	P1_1 \X3,\X1,\T1
 	P1_1 \X2,\X0,\T0
+	// 26 cycles
 
 	// 3 X 2 = 6
 	P1_2 \X6,\X3,\T1
 	P1_2 \X4,\X1,\T1
+	// 6 cycles
+	
+	// 32 cycles
 .endm
 
 
