@@ -5,7 +5,7 @@
 ### Test vectors for PRESENT with an 80-bit key
 ##### plaintext   = 00000000 00000000
 ##### key         = 00000000 00000000 0000
-##### ciphertext  = 5579c138 7b228455
+##### ciphertext  = 5579c138 7b228445
 
 #### This code encrypts after pre-calculating the KeySchedule and the P operation performed on some round keys. PRESENT-80 and PRESENT-128 have the same number of rounds (and the same number of round keys), so if you pre-calculate the round keys, you can use this encryption function for each mode.
 
