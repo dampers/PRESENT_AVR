@@ -160,15 +160,8 @@
 
 .macro P1_1 X2, X0, T
 	// 	t = (X[2] ^ (X[0] >> 4)) & 0x0F;
-	//MOV \T, \X0
-
-	// X[0] >> 4
 	SWAP \T
-//  ANDI \T, 0x0F
-	// t ^= X[2]
 	EOR \T, \X2
-	
-	// t &= 0x0F
 	ANDI \T, 0x0F
 
 	// X[2] = X[2] ^ t
@@ -176,7 +169,6 @@
 	
 	// X[0] ^= T << 4
 	SWAP \T
-//  ANDI \T, 0x0F
 	EOR \X0, \T
 .endm
 
